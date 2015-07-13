@@ -1,0 +1,6 @@
+{
+  "ENV": {
+    "name": "DEVELOPMENT",
+    "apiURL":"development.api/v1/"
+  }
+}

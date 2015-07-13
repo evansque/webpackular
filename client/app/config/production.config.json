@@ -1,0 +1,6 @@
+{
+  "ENV": {
+    "name": "PRODUCTION",
+    "apiURL":"production.api/v1/"
+  }
+}

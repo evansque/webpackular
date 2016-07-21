@@ -22,6 +22,9 @@ Examples:
 - `gulp component --name dashboard` -> This will create a new component at `client/app/components/dashboard`
 - `gulp component --name sidebar --parent ../common` -> this will create a new component at `client/app/common/sidebar`
 
+#Stylesheets
+You can import all your stylesheet resources and assets in `./client/app/resources/stylesheets/base.scss` and it will be globally available without having to import it manually in all your scss files.
+
 #@Todo
     - Create a Gulp tasks that generates angular services, factories and directives
     - Create  `Gulp build --env **` task
@@ -29,10 +32,6 @@ Examples:
 
 
 
-
-Heavily inspired by [NG6-starter][1]
-
-[1]:https://github.com/angular-class/NG6-starter
 [2]:http://npmjs.com/gulp-ng-constant
 [3]:getbootstrap.com
 [4]:https://jquery.com/

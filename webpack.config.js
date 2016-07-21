@@ -1,5 +1,4 @@
 path = require('path');
-console.log("style!css!sass?outputStyle=expanded&includePaths[]=" + path.resolve(__dirname, "./node_modules/compass-mixins/lib") + '!sass-resources');
 module.exports = {
     devtool: 'sourcemap',
     output: {

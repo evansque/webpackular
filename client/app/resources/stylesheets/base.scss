@@ -1,3 +1,5 @@
 // add all your required resources and assets here
 @import "compass";
-@import "./client/app/resources/stylesheets/_variables"; // full path required by sass-resources-loader
+
+// variables
+$background-color: #f1f1f1;

@@ -4,6 +4,12 @@ module.exports = {
   output: {
     filename: 'bundle.js'
   },
+  context: path.join(__dirname, './'),
+  resolve: {
+    alias: {
+      resources: path.join(__dirname, './client/app/resources')
+    }
+  },
   module: {
     loaders: [
       {

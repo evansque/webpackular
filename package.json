@@ -47,7 +47,8 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "start": "gulp --env development"
   },
   "keywords": [
     "angular",
@@ -55,6 +56,7 @@
     "es6"
   ],
   "dependencies": {
+    "gulp-eslint": "^3.0.1",
     "karma-webpack": "^1.7.0"
   }
 }

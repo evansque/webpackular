@@ -16,20 +16,18 @@ angular.module('app', [
   Common.name,
   Components.name,
   ngTranslate
-])
-  .config(($urlRouterProvider, $locationProvider, $translateProvider, ENV) => {
-    $translateProvider.useStaticFilesLoader({
-      prefix: 'app/i18n/',
-      suffix: '.json'
-    });
+]).config(($urlRouterProvider, $locationProvider, $translateProvider, ENV) => {
+  $translateProvider.useStaticFilesLoader({
+    prefix: 'app/i18n/',
+    suffix: '.json'
+  });
 
-    $translateProvider.useSanitizeValueStrategy('escaped');
-    $translateProvider.preferredLanguage('en');
+  $translateProvider.useSanitizeValueStrategy('escaped');
+  $translateProvider.preferredLanguage('en');
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
-    $urlRouterProvider.otherwise('/');
-  })
-  .directive('app', AppComponent);
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+  $urlRouterProvider.otherwise('/');
+}).directive('app', AppComponent);

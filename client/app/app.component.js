@@ -1,11 +1,9 @@
 import template from './app.html';
 import './app.scss';
 
-let appComponent = ()=>{
-	return {
-		template, // because we have a variable name template we can use the shorcut here
-		restrict: 'E'
-	};
-};
+const appComponent = () => ({
+  template,
+  restrict: 'E'
+});
 
 export default appComponent;

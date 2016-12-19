@@ -5,9 +5,9 @@ import About from './about/about';
 
 window.jQuery = window.$ = jQuery;
 
-let componentModule = angular.module('app.components', [
-	Home.name,
-	About.name
+const componentModule = angular.module('app.components', [
+  Home.name,
+  About.name
 ]);
 
 export default componentModule;

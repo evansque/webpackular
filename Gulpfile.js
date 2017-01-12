@@ -59,7 +59,7 @@ gulp.task('config', function () {
   }
 });
 
-// use our webpack.config.js to 
+// use our webpack.config.js to
 // build our modules
 gulp.task('webpack', ['config'], function () {
   return gulp.src(paths.entry)
@@ -119,7 +119,17 @@ gulp.task('component', function () {
     .pipe(gulp.dest(destPath));
 });
 
+gulp.task('deploy', function (done) {
+  return [
+    gulp.src(['./client/*', '!./client/app/{,/**}', './client/app/i18n/**']).pipe(gulp.dest('./build/'+ yargs.env)),
+    gulp.src('./client/app/i18n/**').pipe(gulp.dest('./build/'+ yargs.env + '/app/i18n/'))
+  ]
+})
 
 gulp.task('default', function (done) {
   sync('lint', 'webpack', 'serve', 'watch', done);
 });
+
+gulp.task('build', function (done) {
+  sync('lint', 'webpack', 'deploy')
+})

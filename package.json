@@ -48,7 +48,10 @@
   },
   "scripts": {
     "test": "karma start",
-    "start": "gulp --env development"
+    "start": "gulp --env development",
+    "prod": "gulp --env production",
+    "build:dev": "gulp build --env development",
+    "build:prod": "gulp build --env production"
   },
   "keywords": [
     "angular",

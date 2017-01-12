@@ -25,9 +25,11 @@ Examples:
 #Stylesheets
 You can import all your stylesheet resources and assets in `./client/app/resources/stylesheets/base.scss` and it will be globally available without having to import it manually in all your scss files.
 
-#@Todo
-    - Create a Gulp tasks that generates angular services, factories and directives
-    - Create  `Gulp build --env **` task
+#NPM Scripts
+    - `npm start` : runs the development environment
+    - `npm run prod` : runs the production environment
+    - `npm run build:dev`: deploys development environment to `./build/development`
+    - `npm run build:prod`: deploys production environment to `./build/production`
 
 
 

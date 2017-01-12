@@ -1,8 +1,8 @@
 angular.module("app.config", [])
 
 .constant("ENV", {
-	"name": "DEVELOPMENT",
-	"apiURL": "development.api/v1/"
+	"name": "PRODUCTION",
+	"apiURL": "production.api/v1/"
 })
 
 ;
